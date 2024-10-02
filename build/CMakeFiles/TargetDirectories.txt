@@ -1,0 +1,3 @@
+/home/mishima/Projects/vulkan/build/CMakeFiles/VulkanExample.dir
+/home/mishima/Projects/vulkan/build/CMakeFiles/edit_cache.dir
+/home/mishima/Projects/vulkan/build/CMakeFiles/rebuild_cache.dir
