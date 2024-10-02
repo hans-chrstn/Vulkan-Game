@@ -1,1 +1,0 @@
-/run/current-system/sw/bin/clang++ -g CMakeFiles/VulkanExample.dir/main.cpp.o -o VulkanExample  /nix/store/9xrls1mp0qpz6mbdfzx98nhqkkm5ygz8-vulkan-loader-1.3.290.0/lib/libvulkan.so /nix/store/rwgdgy651jla94iqi8s7xg5qbcqjsf4f-glfw-3.4/lib/libglfw.so.3.4
