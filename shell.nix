@@ -2,19 +2,17 @@
 let
   libs = with pkgs; [
     libGL
-    wayland
-    waylandpp
     SDL2
     SDL2_ttf
-    boost
+    SDL2_mixer
+    SDL2_image
+    SDL2_sound
+    SDL2_gfx
+    SDL2_net
     cmake
-    cmakeCurses
-    catch2
     glm
     gcc
     pkg-config
-    cargo
-    glfw-wayland
     gdb
     mesa
     glslang
@@ -56,10 +54,9 @@ pkgs.mkShell {
   LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath libs;
   VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
   VULKAN_SDK = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
-  XDG_DATA_DIRS = builtins.getEnv "XDG_DATA_DIRS";
-  XDG_RUNTIME_DIRS = "/run/user/1001/";
+  # XDG_DATA_DIRS = builtins.getEnv "XDG_DATA_DIRS";
+  # XDG_RUNTIME_DIRS = "/run/user/1001/";
   shellHook = ''
-    export _GLFW_WAYLAND=1
     alias yy="yazi"
     alias vs="code"
     echo "Type 'vs' to launch VSCodium"
